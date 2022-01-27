@@ -1,0 +1,127 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title: #fffcf9;
+    --subtitle: #b3b3b3;
+    --bg-button: #e9e6e3;
+    --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+  }
+
+  body {
+      background: var(--background);
+      background-repeat: no-repeat;
+  }
+
+  section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+     font-family: "Poppins", sans-serif;
+
+  }
+
+  section .logo {
+    margin-top: 0.8rem;  
+    text-align: center;
+  }
+
+  section .logo img{
+    width: 50px;
+    height: 50px;
+  }
+
+  section h2 {
+      font-size: 2rem;
+      color: var(--title);
+      font-weight: 500;
+      font-family: "Poppins", sans-serif;
+  }
+
+  section button{
+      display: flex;
+      align-items: center;
+      background: var(--bg-button);
+      border-radius: 8px;
+      padding: 0.5rem;
+      border: 0;
+      font-size: 0.9rem;
+      cursor: pointer;
+      width: 200px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      margin-top: 1rem;
+  }
+
+  section > button > img{
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+
+  section p{
+    margin-top: 1rem;
+    color: var(--title);
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+  }
+
+
+  section .c-movie {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 400px;
+      display: none;
+  }
+
+  section .c-movie .movie {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 340px;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px black;
+  }
+
+  section .c-movie .movie-info {
+      width: 40%;
+      margin-left: 1rem;
+  }
+
+  section .c-movie .movie-info > h2 {
+    font-weight: 500!important;
+    margin-bottom: 1rem;
+  } 
+
+
+  section .c-movie .movie-info > span {
+      color: white;
+      background: grey;
+      border-radius: 4px;
+      padding: 0.5rem;
+  }
+
+  section .c-movie .movie-info .date {
+    background: grey;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 4px;
+    
+  }
+
+  section .c-movie .movie-info > p {
+    width: 100%;
+    text-align: left;
+  }
