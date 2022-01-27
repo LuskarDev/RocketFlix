@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-   <img alt="RocketFlix" title="RocketFlix" src="https://github.com/LuskarDev/RocketFlix/blob/main/images/RocketFlix.mp4" width="720px" />
+   <img alt="RocketFlix" title="RocketFlix" src="https://github.com/LuskarDev/RocketFlix/blob/main/images/RocketFlix.gif" width="720px" />
 </p>
 
 ## Tecnologias
