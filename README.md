@@ -12,6 +12,7 @@
 
 <p align="center">
    <img alt="RocketFlix" title="RocketFlix" src="https://github.com/LuskarDev/RocketFlix/blob/main/images/RocketFlix.gif" width="720px" />
+  <figcaption>A má qualidade é devido o Programa de Gravação de Tela utilizado </figcaption>
 </p>
 
 ## Tecnologias
