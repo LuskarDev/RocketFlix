@@ -12,208 +12,122 @@
     --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
   }
 
-  body {
-      background: var(--background);
-      background-repeat: no-repeat;
-  }
 
-  section {
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-     font-family: "Poppins", sans-serif;
-
-  }
-
-  section .logo {
-    margin-top: 0.8rem;  
-    text-align: center;
-  }
-
-  section .logo img{
-    width: 50px;
-    height: 50px;
-  }
-
-  section h2 {
-      font-size: 2rem;
-      color: var(--title);
-      font-weight: 500;
-      font-family: "Poppins", sans-serif;
-  }
-
-  section button{
-      display: flex;
-      align-items: center;
-      background: var(--bg-button);
-      border-radius: 8px;
-      padding: 0.5rem;
-      border: 0;
-      font-size: 0.9rem;
-      cursor: pointer;
-      width: 200px;
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      margin-top: 1rem;
-  }
-
-  section > button > img{
-    width: 50px;
-    height: 50px;
-    margin-right: 1rem;
-  }
-
-  section p{
-    margin-top: 1rem;
+ section {
+  background: var(--background);
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: var(--title);
-    text-align: center;
-    width: 80%;
-    font-weight: 400;
+ }
+
+ section .logo img{
+   width: 70px;
+   margin-top: 20px;
+ }
+
+ section h1{
+   text-align: center;
+    margin: 15px;
+    font-weight: 700;
+ }
+
+
+ section > button {
+   display: flex;
+   align-items: center;
+   border: 1px solid var(--subtitle);
+   border-radius: 8px;
+   font-size: 1rem;
+   font-weight: 400;
+   text-transform: uppercase;
+   padding: 10px 30px;
+    margin: 10px 0;
+   background: var(--bg-button);
+ }
+
+ section > button:hover{
+   cursor: pointer;
+   box-shadow: 2px 1px 4px 0px grey;
+ }
+
+ section > button > img {
+  width: 70px;
+  padding-right: 10px;
+ }
+
+ section > p {
+   margin: 20px 10px;
+ }
+
+
+ /** mostrando filmes **/
+
+
+ section .c-movie {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+ }
+
+ section .c-movie figure{
+   display: flex;
+   flex-direction: column;
+    width: 250px;
+ }
+
+ section .c-movie figure figcaption p{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 10px 0;
+ }
+
+ section .c-movie figure figcaption p span{
+   background: var(--bg-button);
+   color: black;
+   padding: 5px;
+   border-radius: 20px;
+ }
+
+section .c-movie figure img{
+  height: 300px;
+  background-size: cover;
+  margin: 0 25px;
+  border-radius: 8px;
+}
+
+section .movie-info{
+  margin: 0 20px;
+}
+
+section .movie-info .title{
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+section .movie-info .average{
+  background: var(--bg-button);
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+ section .movie-info .descrition {
+   font-weight: 700;
+   width: 400px;
+  margin: 20px 0;
+
+ }
+
+ @media (max-width: 405px){
+  section .movie-info .descrition {
+    width: 300px; 
   }
-
-
-  section .c-movie {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 28rem;
-      display: none;
-  }
-
-  section .c-movie figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  section .c-movie figure p{
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  section .c-movie .movie {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 15.3rem;
-    height: 23rem;
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px 0px black;
-  }
-
-  section .c-movie .movie-info {
-      width: 40%;
-      margin-left: 1rem;
-  }
-
-  section .c-movie .movie-info > h2 {
-    font-weight: 500!important;
-    margin-bottom: 1rem;
-  } 
-
-
-  section .c-movie .movie-info > span {
-      color: white;
-      background: grey;
-      border-radius: 4px;
-      padding: 0.5rem;
-      margin-top: 1.5rem;
-  }
-
-  section .c-movie .date {
-    background: grey;
-    color: white;
-    padding: 0.3rem;
-    border-radius: 4px;
-  }
-
-  section .c-movie .movie-info .descrition {
-    width: 100%;
-    text-align: left;
-  }
-
-  @media (max-width: 724px) {
-
-    section {
-      height: 110vh;
-      width: 100%;
-    }
-
-    section .logo {
-      margin-top: 0rem;  
-      text-align: center;
-    }
-
-    section h2 {
-      font-size:1rem;
-    }
-
-    section button{
-      margin-top: 2rem;
-    }
-    .c-movie {
-      margin-top: 8.4rem;   
-      flex-direction: column; 
-    }
-
-    section .c-movie .movie {
-      width: 10rem;
-      height: 15rem;
-      background-size: contain;
-      background-position: center;
-    }
-
-
-  section .c-movie .movie-info {
-    width: 57%;
-  }
-
-    section .c-movie .movie-info > h2 {
-      width: 100%;
-      text-align: center;
-
-    }
-
-
-  section .c-movie .movie-info .descrition {  
-    width: 105%;
-    margin-bottom: 6.8rem;
-    font-size: 0.8rem;
-  }
-
-  section .c-movie .movie-info > span {
-    font-size: 0.8rem;
-
-  }
-  section .c-movie .movie-info > h2 {
-    font-size: 1.4rem;
-    
-  } 
-  }
-
-  @media (max-width: 462px) {
-
-    section {
-      height: 131vh;
-      width: 100%;
-    }
-
-
-    section .c-movie .movie {
-      margin-top: 9.8rem;   
-      flex-direction: column; 
-    }
-
-    section .c-movie .movie-info .descrition {  
-      width: 105%;
-    }
-
-    section button{
-      margin-top: 10rem;
-    }
-  }
+ }
