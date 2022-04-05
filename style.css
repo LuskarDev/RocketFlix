@@ -14,6 +14,8 @@
 
 
  section {
+   width: 100%;
+   height: 100vh;
   background: var(--background);
   background-repeat: no-repeat;
   background-size: auto;
@@ -69,7 +71,7 @@
 
 
  section .c-movie {
-   display: flex;
+   display: none;
    flex-wrap: wrap;
    align-items: center;
    justify-content: center;
@@ -90,8 +92,9 @@
 
  section .c-movie figure figcaption p span{
    background: var(--bg-button);
+   font-weight: 700;
    color: black;
-   padding: 5px;
+   padding: 8px;
    border-radius: 20px;
  }
 
@@ -111,9 +114,14 @@ section .movie-info .title{
   font-size: 2rem;
 }
 
+
 section .movie-info .average{
   background: var(--bg-button);
   color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
   padding: 10px;
   border-radius: 50%;
 }
