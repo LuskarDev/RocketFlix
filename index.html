@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Não sabe o que assistir ?, Então de um click e veja uma bela sugestão">
+    <meta name="description" content="Não sabe o que assistir ?, de um clique e venha descobrir">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
            
             <div class="movie-info">
                 <h2 class="title"></h2>
-                <span class="average"></span>
+                <p class="average"></p>
                 <p class="descrition"></p>
             </div> 
 
@@ -75,6 +75,7 @@
                 average.innerText = setMovie.vote_average
                 date.innerText = setMovie.release_date
                 movie.style.backgroundImage = "url(" + IMG_URL + setMovie.poster_path + ")"
+                Cmovie.style.display = "flex";
             })
         }
     </script>
